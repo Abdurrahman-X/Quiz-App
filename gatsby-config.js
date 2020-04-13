@@ -13,9 +13,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ["baskervill:400", "muli:300,700"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
+     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
