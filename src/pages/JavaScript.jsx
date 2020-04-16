@@ -12,15 +12,16 @@ const JavaScriptQuizz = () => {
   const [questions] = useState([
     {
       question: "How can you get the type of arguments passed to a function?",
-      answers: {
-        a: "Using typeof operator",
-        b: "Using getType function",
-        c: "Both of the above",
-        d: "None of the above",
-      },
-      answer: "a",
+      answers: [
+        "Using typeof operator",
+        "Using getType function",
+        "Both of the above",
+        "None of the above",
+      ],
+      answer: 0,
     },
   ])
+
   return (
     <>
       <GlobaleStyle />
@@ -34,26 +35,12 @@ const JavaScriptQuizz = () => {
 
         <Sideright>
           <Container>
-            {/* {questions[0].answers
-              ? questions[0].answers.forEach(answer => console.log("nadia"))
-              : null} */}
-            <Answer>
-              <input type="radio" name="" value="" />
-              {questions[0].answers["a"]}
-            </Answer>
-            <Answer>
-              {" "}
-              <input type="radio" name="" value="" />
-              {questions[0].answers["b"]}
-            </Answer>
-            <Answer>
-              <input type="radio" name="" value="" />
-              {questions[0].answers["c"]}
-            </Answer>
-            <Answer>
-              <input type="radio" name="" value="" />
-              {questions[0].answers["d"]}
-            </Answer>
+            {questions[0].answers.map((answer, i) => (
+              <Answer key={i}>
+                <input type="radio" name={answer} value={answer} />
+                <label htmlFor={answer}> {answer}</label>
+              </Answer>
+            ))}
             <button>Next</button>
           </Container>
         </Sideright>
