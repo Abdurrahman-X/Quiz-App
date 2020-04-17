@@ -1,5 +1,5 @@
 import React from "react"
-import GlobaleStyle from "../components/Style/GlobaleStyle"
+import GlobalStyle from "../components/Style/GlobalStyle"
 import Cards from '../components/Cards';
 import {
   Wrapper,
@@ -10,7 +10,7 @@ import {
 
 const IndexPage = () => (
   <>
-    <GlobaleStyle />
+    <GlobalStyle />
     <Wrapper>
       <Sideleft>
         <h4>Welcome to the programming test!</h4>
@@ -18,6 +18,7 @@ const IndexPage = () => (
           <h3>choose a language &#8594;</h3>
         </Choose>
       </Sideleft>
+      
       <Sideright>
        <Cards />
       </Sideright>

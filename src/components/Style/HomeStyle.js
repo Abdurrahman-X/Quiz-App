@@ -14,10 +14,18 @@ export const Sideleft = styled.div`
   justify-content: center;
   flex-direction: column;
   h4 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     text-transform: capitalize;
     margin: 0px;
     font-family: muli, sans-serif;
+  }
+  @media(max-width:810px) {
+    grid-column-start: span 12;
+  }
+  @media(max-width:455px) {
+    h4{
+      font-size: 2rem;
+    }
   }
 `
 
@@ -40,6 +48,12 @@ export const Sideright = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media(max-width:810px) {
+    grid-column-start: span 12;
+  }
+  @media(max-width:455px) {
+    padding:10px;
+  }
 `
 export const CardStyle = styled.div`
   background: #fff;
