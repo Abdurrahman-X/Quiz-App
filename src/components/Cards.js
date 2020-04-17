@@ -20,7 +20,7 @@ const Cards = () => {
         >
           <h1>{card.title}</h1>
           <h5> This quiz contains 15 questions about {card.title}</h5>
-          <img src={card.logo} alt={card.title} />
+          <img src={card.logo} alt={card.title} style={{width:'100px'}} />
         </CardStyle>
       ))}
     </div>
