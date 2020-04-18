@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div `
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
 `
-export const Logo = styled.div`
+export const Logo = styled.div `
   display: flex;
   cursor: pointer;
   img {
@@ -17,13 +17,13 @@ export const Logo = styled.div`
     margin: 15px 5px;
   }
 `
-export const Score = styled.div`
+export const Score = styled.div `
   padding: 20px;
   border: 2px solid green;
   border-radius: 50%;
 `
 
-export const Sideleft = styled.div`
+export const Sideleft = styled.div `
   grid-column-start: span 6;
   background-color: #000;
   padding: 30px;
@@ -44,7 +44,7 @@ export const Sideleft = styled.div`
   }
 `
 
-export const Sideright = styled.div`
+export const Sideright = styled.div `
   grid-column-start: span 6;
   color: #000;
   background: #fbfbfb;
@@ -58,4 +58,10 @@ export const Sideright = styled.div`
   @media (max-width: 455px) {
     padding: 10px;
   }
+`
+
+export const Btns = styled.div `
+display : flex;
+width: 100%;
+    justify-content: space-around;
 `

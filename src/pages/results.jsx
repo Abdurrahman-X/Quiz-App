@@ -1,31 +1,26 @@
 import React from "react"
 import { navigate } from "gatsby"
-import GlobalStyle from "../components/Style/GlobalStyle"
-import Js from "../images/JavaScript.png"
-import {
-  Wrapper,
-  Sideleft,
-  Sideright,
-  Logo,
-  Score,
-} from "../components/Style/ResultStyle"
-const Results = () => {
+import { Score, Btns } from "../components/Style/ResultStyle"
+const Results = ({
+  correctAnswers,
+  wrongAnswers,
+  numberOfQuestions,
+  retakeTest,
+}) => {
   return (
     <>
-      <GlobalStyle />
-      <Wrapper>
-        <Sideleft>
-          <Logo onClick={() => navigate(`/`)}>
-            <img src={Js} alt="Js logo" />
-            <h5>JavaScript</h5>
-          </Logo>
-          <h4>You completed your test!</h4>
-        </Sideleft>
-        <Sideright>
-          <h4>Your score is</h4>
-          <Score>10/10</Score>
-        </Sideright>
-      </Wrapper>
+      <p>
+        {correctAnswers} Correct answers and {wrongAnswers} Wrong answers
+      </p>
+      <h4>Your score is</h4>
+      <Score>
+        {" "}
+        {correctAnswers}/{numberOfQuestions}{" "}
+      </Score>
+      <Btns>
+        <button onClick={() => navigate("/")}>Home</button>
+        <button onClick={retakeTest}>Retake the test</button>
+      </Btns>
     </>
   )
 }
