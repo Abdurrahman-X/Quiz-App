@@ -9,32 +9,22 @@ import { Answer, Container } from "../components/Style/QuizzStyle"
 const PythonQuizz = () => {
   const [questions] = useState([
     {
-      question: "How can you get the type of arguments passed to a function?",
+      question: "In Python 3, the maximum value for an integer is 263 - 1:",
       answers: [
-        { text: "Using typeof operator", value: "0" },
-        { text: "Using getType function", value: "1" },
-        { text: "Both of the above", value: "2" },
-        { text: "None of the above", value: "3" },
-      ],
-      answer: 1,
-    },
-    {
-      question: `Determine the result -String("Hello") === "Hello"`,
-      answers: [
-        { text: "true", value: "0" },
-        { text: "false", value: "1" },
-        { text: "Syntax Error", value: "2" },
-        { text: "Reference Error", value: "3" },
+        { text: "False", value: "0" },
+        { text: "True", value: "1" },
       ],
       answer: 0,
     },
     {
-      question: `the answer is the 3rd`,
+      question: `Which of the following are valid ways to specify the string literal foo'bar in Python:
+
+      `,
       answers: [
-        { text: "not me", value: "0" },
-        { text: "not me", value: "1" },
-        { text: "Me", value: "2" },
-        { text: "not me ", value: "3" },
+        { text: `"foo'bar"`, value: "0" },
+        { text: `'foo'bar'`, value: "1" },
+        { text: `'foo\'bar'`, value: "2" },
+        { text: `'foo''bar'`, value: "3" },
       ],
       answer: 2,
     },

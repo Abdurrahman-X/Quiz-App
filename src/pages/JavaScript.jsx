@@ -29,14 +29,24 @@ const JavaScriptQuizz = () => {
       answer: 0,
     },
     {
-      question: `the answer is the 3rd`,
+      question: `JavaScript File Has An Extension Of`,
       answers: [
-        { text: "not me", value: "0" },
-        { text: "not me", value: "1" },
-        { text: "Me", value: "2" },
-        { text: "not me ", value: "3" },
+        { text: ".java", value: "0" },
+        { text: ".js", value: "1" },
+        { text: ".xml", value: "2" },
+        { text: ".javascript", value: "3" },
       ],
-      answer: 2,
+      answer: 1,
+    },
+    {
+      question: `A Function Associated With An object is Called`,
+      answers: [
+        { text: "function", value: "0" },
+        { text: "method", value: "1" },
+        { text: "link", value: "2" },
+        { text: "none", value: "3" },
+      ],
+      answer: 1,
     },
   ])
   const [questionIndex, setQuestionIndex] = useState(0)

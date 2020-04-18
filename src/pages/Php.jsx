@@ -9,34 +9,23 @@ import { Answer, Container } from "../components/Style/QuizzStyle"
 const PhpQuizz = () => {
   const [questions] = useState([
     {
-      question: "How can you get the type of arguments passed to a function?",
+      question: "What does PHP stand for?",
       answers: [
-        { text: "Using typeof operator", value: "0" },
-        { text: "Using getType function", value: "1" },
-        { text: "Both of the above", value: "2" },
-        { text: "None of the above", value: "3" },
+        { text: "Personal Hypertext Processor", value: "0" },
+        { text: "Hypertext Preprocessor", value: "1" },
+        { text: "Private Home Page", value: "2" },
       ],
       answer: 1,
     },
     {
-      question: `Determine the result -String("Hello") === "Hello"`,
+      question: `PHP server scripts are surrounded by delimiters, which?`,
       answers: [
-        { text: "true", value: "0" },
-        { text: "false", value: "1" },
-        { text: "Syntax Error", value: "2" },
-        { text: "Reference Error", value: "3" },
+        { text: "<?php></?>", value: "0" },
+        { text: "<script><script/>", value: "1" },
+        { text: "<&></&>", value: "2" },
+        { text: "<?php...?>", value: "3" },
       ],
-      answer: 0,
-    },
-    {
-      question: `the answer is the 3rd`,
-      answers: [
-        { text: "not me", value: "0" },
-        { text: "not me", value: "1" },
-        { text: "Me", value: "2" },
-        { text: "not me ", value: "3" },
-      ],
-      answer: 2,
+      answer: 3,
     },
   ])
   const [questionIndex, setQuestionIndex] = useState(0)
