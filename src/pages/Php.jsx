@@ -62,13 +62,13 @@ return <div>{error}</div>;
 }
   const handlerNext = () => {
     const answer = { questionId: question.id, answer: currentAnswer }
+    answers.push(answer)
+    setAnswer(answers)
+    setCurrentAnswer("")
     if(!currentAnswer){
       setError('Please select a answer');
       return;
     }
-    answers.push(answer)
-    setAnswer(answers)
-    setCurrentAnswer("")
     if(currentQuestions + 1 < questions.length){
       setCurrentQuestions(currentQuestions + 1);
     }
@@ -86,7 +86,7 @@ return <div>{error}</div>;
             <img src={Js} alt="Js logo" />
             <h5>JavaScript</h5>
           </Logo>
-          <Score>Questions {currentQuestions + 1} of {questions.length}</Score>
+          <h5>Questions {currentQuestions + 1} of  {questions.length}</h5>
           <h4>{question.question}</h4>
         </Sideleft>
         <Sideright>
