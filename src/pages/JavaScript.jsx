@@ -54,15 +54,28 @@ const JavaScriptQuizz = () => {
   const [correctAnswers, setCorrectAnswers] = useState(0)
   const [wrongAnswers, setWrongAnswers] = useState(0)
   const [showResults, setShowResults] = useState(false)
+  const [error, setError] = useState("")
+  const handlerError = () => {
+    if (!error) {
+      return
+    }
+    return <div>{error}</div>
+  }
 
   const nextQuestion = () => {
-    questions[questionIndex].answer == selectedAnswer
-      ? setCorrectAnswers(correctAnswers + 1)
-      : setWrongAnswers(wrongAnswers + 1)
-    if (questionIndex < questions.length - 1) {
-      setQuestionIndex(questionIndex + 1)
+    if (!selectedAnswer) {
+      setError("select answer")
     } else {
-      setShowResults(true)
+      questions[questionIndex].answer == selectedAnswer
+        ? setCorrectAnswers(correctAnswers + 1)
+        : setWrongAnswers(wrongAnswers + 1)
+        setSelectedAnswer('')
+      if (questionIndex < questions.length - 1) {
+        setQuestionIndex(questionIndex + 1)
+        
+      } else {
+        setShowResults(true)
+      }
     }
   }
   const retakeTest = () => {
@@ -113,7 +126,10 @@ const JavaScriptQuizz = () => {
           )}
         </Sideleft>
         <Sideright>
-          <Container>{showQuestions()}</Container>
+          <Container>
+            {handlerError()}
+            {showQuestions()}
+          </Container>
         </Sideright>
       </Wrapper>
     </>
