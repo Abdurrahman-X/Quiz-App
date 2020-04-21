@@ -3,13 +3,15 @@ import { navigate } from "gatsby"
 import GlobalStyle from "../components/Style/GlobalStyle"
 import Js from "../images/JavaScript.png"
 import Result from "./results2"
+import Questions from "../components/Questions"
+import Answers from "../components/Answers"
 import {
   Wrapper,
   Sideleft,
   Sideright,
   Logo,
 } from "../components/Style/ResultStyle"
-import { Answer, Container } from "../components/Style/QuizzStyle"
+import { Container, Answer } from "../components/Style/QuizzStyle"
 
 const PhpQuizz = () => {
   const questions = [
@@ -60,7 +62,7 @@ const PhpQuizz = () => {
     if (!error) {
       return
     }
-    return <div>{error}</div>
+    return <div style={{ color: "red", fontSize: "20px" }}>{error}</div>
   }
   const restart = () => {
     setShowResults(false)
@@ -70,33 +72,21 @@ const PhpQuizz = () => {
     setWrongAnswers(0)
   }
   const handlerNext = () => {
-    // if (!currentAnswer) {
-    //   setError("Please select a answer")
-    // } else {
-    //   if (question.correct_answer === currentAnswer) {
-    //     setCorrectAnswers(correctAnswers + 1)
-    //   } else {
-    //     setWrongAnswers(wrongAnswers + 1)
-    //   }
-    //   console.log(currentAnswer)
-    //   setCurrentAnswer("")
-    //   if (currentQuestions + 1 < questions.length) {
-    //     setCurrentQuestions(currentQuestions + 1)
-    //   } else {
-    //     setShowResults(true)
-    //   }
-    // }
-    !currentAnswer
-      ? setError("Please select a answer")
-      : question.correct_answer === currentAnswer
-      ? setCorrectAnswers(correctAnswers + 1)
-      : setWrongAnswers(wrongAnswers + 1)
-    setCurrentAnswer("")
-
-    if (currentQuestions + 1 < questions.length) {
-      setCurrentQuestions(currentQuestions + 1)
+    if (!currentAnswer) {
+      setError("Please select a answer")
     } else {
-      setShowResults(true)
+      if (question.correct_answer === currentAnswer) {
+        setCorrectAnswers(correctAnswers + 1)
+      } else {
+        setWrongAnswers(wrongAnswers + 1)
+      }
+      console.log(currentAnswer)
+      setCurrentAnswer("")
+      if (currentQuestions + 1 < questions.length) {
+        setCurrentQuestions(currentQuestions + 1)
+      } else {
+        setShowResults(true)
+      }
     }
   }
   const showResult = () => {
@@ -111,45 +101,12 @@ const PhpQuizz = () => {
       )
     } else {
       return (
-        <div>
-          <Answer>
-            <input
-              type="radio"
-              value="a"
-              checked={currentAnswer === "a"}
-              onChange={handlerClick}
-            />
-            <label>{question.answer_a}</label>
-          </Answer>
-          <Answer>
-            <input
-              type="radio"
-              value="b"
-              checked={currentAnswer === "b"}
-              onChange={handlerClick}
-            />
-            <label>{question.answer_b}</label>
-          </Answer>
-          <Answer>
-            <input
-              type="radio"
-              value="c"
-              checked={currentAnswer === "c"}
-              onChange={handlerClick}
-            />
-            <label>{question.answer_c}</label>
-          </Answer>
-          <Answer>
-            <input
-              type="radio"
-              value="d"
-              checked={currentAnswer === "d"}
-              onChange={handlerClick}
-            />
-            <label>{question.answer_d}</label>
-          </Answer>
-          <button onClick={handlerNext}>Next</button>
-        </div>
+        <Answers
+          currentAnswer={currentAnswer}
+          handlerNext={handlerNext}
+          handlerClick={handlerClick}
+          question={question}
+        />
       )
     }
   }
@@ -165,12 +122,11 @@ const PhpQuizz = () => {
           {showResults ? (
             <h4> Congratulations! You completed the test </h4>
           ) : (
-            ((
-              <h5>
-                Questions {currentQuestions + 1} of {questions.length}
-              </h5>
-            ),
-            (<h4>{question.question}</h4>))
+            <Questions
+              question={question}
+              currentQuestions={currentQuestions}
+              allQuestions={questions}
+            />
           )}
         </Sideleft>
         <Sideright>

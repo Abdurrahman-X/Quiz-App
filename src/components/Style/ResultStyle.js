@@ -32,6 +32,10 @@ export const Sideleft = styled.div `
     font-size: 2.5rem;
     text-transform: capitalize;
     font-family: muli, sans-serif;
+    margin: 15px 0;
+  }
+  .question {
+    margin-top:10rem;
   }
   @media (max-width: 810px) {
     grid-column-start: span 12;

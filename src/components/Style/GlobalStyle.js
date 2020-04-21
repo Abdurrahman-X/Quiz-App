@@ -17,6 +17,7 @@ export default createGlobalStyle `
       padding: 10px;
       cursor: pointer;
       margin-top:10px;
+      border-radius:5px
     }
     button:hover{
       
