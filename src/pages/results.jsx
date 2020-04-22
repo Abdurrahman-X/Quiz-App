@@ -1,6 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { Score, Btns } from "../components/Style/ResultStyle"
+import { Score, Btns } from "../components/Style/QuizzStyle"
 const Results = ({
   correctAnswers,
   wrongAnswers,
