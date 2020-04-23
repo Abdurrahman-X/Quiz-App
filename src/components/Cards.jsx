@@ -29,24 +29,23 @@ const Cards = () => {
         margin: "auto",
       }}
     >
-      {" "}
       {Card.map((card, index) => (
         <CardStyle
           key={index}
           true={card.background}
           onClick={() => navigate(`/${card.title}`)}
         >
-          <h1> {card.title} </h1>{" "}
-          <h5> This quiz contains 15 questions about {card.title} </h5>{" "}
+          <h1> {card.title} </h1>
+          <h5> This quiz contains 15 questions about {card.title} </h5>
           <img
             src={card.logo}
             alt={card.title}
             style={{
               width: "100px",
             }}
-          />{" "}
+          />
         </CardStyle>
-      ))}{" "}
+      ))}
     </div>
   )
 }

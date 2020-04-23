@@ -3,6 +3,7 @@ import { navigate } from "gatsby"
 import Results from "./Results.jsx"
 import AnswerInput from "../components/AnswerInput"
 import GlobalStyle from "../components/Style/GlobalStyle"
+import QuestionsData from '../components/Questions.json';
 import Js from "../images/javascript.png"
 import Php from "../images/Php.png"
 import Python from "../images/Python.png"
@@ -18,63 +19,20 @@ import {
 const QuizzPage = props => {
   useEffect(() => {
     if (props.pathname === "javascript") {
-      setPage("Javascript")
+      setPage("javascript")
     } else if (props.pathname === "php") {
-      setPage("Php")
+      setPage("php")
     } else if (props.pathname === "python") {
-      setPage("Python")
+      setPage("python")
     }
   }, [])
 
-  const [questions] = useState([
-    {
-      question: "How can you get the type of arguments passed to a function?",
-      answers: [
-        { text: "Using typeof operator", value: "0" },
-        { text: "Using getType function", value: "1" },
-        { text: "Both of the above", value: "2" },
-        { text: "None of the above", value: "3" },
-      ],
-      answer: 1,
-    },
-    {
-      question: `Determine the result -String("Hello") === "Hello"`,
-      answers: [
-        { text: "true", value: "0" },
-        { text: "false", value: "1" },
-        { text: "Syntax Error", value: "2" },
-        { text: "Reference Error", value: "3" },
-      ],
-      answer: 0,
-    },
-    {
-      question: `JavaScript File Has An Extension Of`,
-      answers: [
-        { text: ".java", value: "0" },
-        { text: ".js", value: "1" },
-        { text: ".xml", value: "2" },
-        { text: ".javascript", value: "3" },
-      ],
-      answer: 1,
-    },
-    {
-      question: `A Function Associated With An object is Called`,
-      answers: [
-        { text: "function", value: "0" },
-        { text: "method", value: "1" },
-        { text: "link", value: "2" },
-        { text: "none", value: "3" },
-      ],
-      answer: 1,
-    },
-  ])
   const [questionIndex, setQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [correctAnswers, setCorrectAnswers] = useState(0)
   const [wrongAnswers, setWrongAnswers] = useState(0)
   const [showResults, setShowResults] = useState(false)
   const [error, setError] = useState("")
-
   const [page, setPage] = useState("")
 
   const handleCheck = e => {
@@ -93,12 +51,12 @@ const QuizzPage = props => {
     if (!selectedAnswer) {
       setError("select answer")
     } else {
-      questions[questionIndex].answer == selectedAnswer
+      QuestionsData.questions['javascript'][questionIndex].answer === selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
       setSelectedAnswer(null)
 
-      if (questionIndex < questions.length - 1) {
+      if (questionIndex < QuestionsData.questions[{page}].length - 1) {
         setQuestionIndex(questionIndex + 1)
       } else {
         setShowResults(true)
@@ -112,19 +70,19 @@ const QuizzPage = props => {
     setQuestionIndex(0)
   }
   const showQuestions = () => {
-    if (showResults === true) {
+    if (showResults) {
       return (
         <Results
           correctAnswers={correctAnswers}
           wrongAnswers={wrongAnswers}
-          numberOfQuestions={questions.length}
+          numberOfQuestions={QuestionsData.questions['javascript'].length}
           retakeTest={retakeTest}
         />
       )
     } else {
       return (
         <div>
-          {questions[questionIndex].answers.map((answer, i) => (
+          {QuestionsData.questions['javascript'][questionIndex].answers.map((answer, i) => (
             <Answer key={i}>
               <AnswerInput answer={answer} onChange={e => handleCheck(e)} />
               <label htmlFor={answer.text}> {answer.text}</label>
@@ -141,11 +99,11 @@ const QuizzPage = props => {
       <Wrapper>
         <Sideleft>
           <Logo onClick={() => navigate(`/`)}>
-            {page === "Javascript" ? (
+            {page === "javascript" ? (
               <img src={Js} alt="quizz logo" />
-            ) : page === "Php" ? (
+            ) : page === "php" ? (
               <img src={Php} alt="quizz logo" />
-            ) : page === "Python" ? (
+            ) : page === "python" ? (
               <img src={Python} alt="quizz logo" />
             ) : null}
 
@@ -155,10 +113,12 @@ const QuizzPage = props => {
             <h4> Congratulations! You completed the test </h4>
           ) : (
             <>
+            {/* this h3 tag just for test to know page value */}
+            <h3>{page}</h3>
               <h5>
-                Question {questionIndex + 1} of {questions.length}{" "}
+                Question {questionIndex + 1} of {QuestionsData.questions['javascript'].length}{" "}
               </h5>
-              <h4>{questions[questionIndex].question}</h4>
+              <h4>{QuestionsData.questions['javascript'][questionIndex].question}</h4>
             </>
           )}
         </Sideleft>
