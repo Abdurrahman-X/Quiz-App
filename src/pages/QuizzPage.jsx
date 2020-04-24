@@ -3,7 +3,6 @@ import { navigate } from "gatsby"
 import Results from "./Results.jsx"
 import AnswerInput from "../components/AnswerInput"
 import GlobalStyle from "../components/Style/GlobalStyle"
-import QuestionsData from '../components/Questions.json';
 import Js from "../images/javascript.png"
 import Php from "../images/Php.png"
 import Python from "../images/Python.png"
@@ -51,12 +50,12 @@ const QuizzPage = props => {
     if (!selectedAnswer) {
       setError("select answer")
     } else {
-      QuestionsData.questions['javascript'][questionIndex].answer === selectedAnswer
+      props.questions[questionIndex].answer === selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
       setSelectedAnswer(null)
 
-      if (questionIndex < QuestionsData.questions[{page}].length - 1) {
+      if (questionIndex < props.questions.length - 1) {
         setQuestionIndex(questionIndex + 1)
       } else {
         setShowResults(true)
@@ -75,14 +74,14 @@ const QuizzPage = props => {
         <Results
           correctAnswers={correctAnswers}
           wrongAnswers={wrongAnswers}
-          numberOfQuestions={QuestionsData.questions['javascript'].length}
+          numberOfQuestions={props.questions.length}
           retakeTest={retakeTest}
         />
       )
     } else {
       return (
         <div>
-          {QuestionsData.questions['javascript'][questionIndex].answers.map((answer, i) => (
+          {props.questions[questionIndex].answers.map((answer, i) => (
             <Answer key={i}>
               <AnswerInput answer={answer} onChange={e => handleCheck(e)} />
               <label htmlFor={answer.text}> {answer.text}</label>
@@ -113,12 +112,11 @@ const QuizzPage = props => {
             <h4> Congratulations! You completed the test </h4>
           ) : (
             <>
-            {/* this h3 tag just for test to know page value */}
-            <h3>{page}</h3>
               <h5>
-                Question {questionIndex + 1} of {QuestionsData.questions['javascript'].length}{" "}
+                Question {questionIndex + 1} of
+                {props.questions.length}
               </h5>
-              <h4>{QuestionsData.questions['javascript'][questionIndex].question}</h4>
+              <h4>{props.questions[questionIndex].question}</h4>
             </>
           )}
         </Sideleft>

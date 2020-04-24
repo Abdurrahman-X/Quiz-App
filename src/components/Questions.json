@@ -1,97 +1,193 @@
 {
   "questions": {
-    "javascript": [
-      {
+    "javascript": [{
         "question": "How can you get the type of arguments passed to a function? js ",
-        "answers": [
-          { "text": "Using typeof operator js", "value": "0" },
-          { "text": "Using getType function", "value": "1" },
-          { "text": "Both of the above", "value": "2" },
-          { "text": "None of the above", "value": "3" }
+        "answers": [{
+            "text": "Using typeof operator js",
+            "value": "0"
+          },
+          {
+            "text": "Using getType function",
+            "value": "1"
+          },
+          {
+            "text": "Both of the above",
+            "value": "2"
+          },
+          {
+            "text": "None of the above",
+            "value": "3"
+          }
         ],
         "answer": 1
       },
       {
         "question": "How can you get the type of arguments passed to a function? js  ",
-        "answers": [
-          { "text": "true", "value": "0" },
-          { "text": "false", "value": "1" },
-          { "text": "Syntax Error", "value": "2" },
-          { "text": "Reference Error", "value": "3" }
+        "answers": [{
+            "text": "true",
+            "value": "0"
+          },
+          {
+            "text": "false",
+            "value": "1"
+          },
+          {
+            "text": "Syntax Error",
+            "value": "2"
+          },
+          {
+            "text": "Reference Error",
+            "value": "3"
+          }
         ],
         "answer": 0
       },
       {
         "question": "JavaScript File Has An Extension Of js",
-        "answers": [
-          { "text": ".java", "value": "0" },
-          { "text": ".js", "value": "1" },
-          { "text": ".xml", "value": "2" },
-          { "text": ".javascript", "value": "3" }
+        "answers": [{
+            "text": ".java",
+            "value": "0"
+          },
+          {
+            "text": ".js",
+            "value": "1"
+          },
+          {
+            "text": ".xml",
+            "value": "2"
+          },
+          {
+            "text": ".javascript",
+            "value": "3"
+          }
         ],
         "answer": 1
       }
     ],
-    "php": [
-      {
+    "php": [{
         "question": "How can you get the type of arguments passed to a function? php",
-        "answers": [
-          { "text": "Using typeof operator php", "value": "0" },
-          { "text": "Using getType function", "value": "1" },
-          { "text": "Both of the above", "value": "2" },
-          { "text": "None of the above", "value": "3" }
+        "answers": [{
+            "text": "Using typeof operator php",
+            "value": "0"
+          },
+          {
+            "text": "Using getType function",
+            "value": "1"
+          },
+          {
+            "text": "Both of the above",
+            "value": "2"
+          },
+          {
+            "text": "None of the above",
+            "value": "3"
+          }
         ],
         "answer": 1
       },
       {
         "question": "How can you get the type of arguments passed to a function? php ",
-        "answers": [
-          { "text": "true", "value": "0" },
-          { "text": "false", "value": "1" },
-          { "text": "Syntax Error", "value": "2" },
-          { "text": "Reference Error", "value": "3" }
+        "answers": [{
+            "text": "true",
+            "value": "0"
+          },
+          {
+            "text": "false",
+            "value": "1"
+          },
+          {
+            "text": "Syntax Error",
+            "value": "2"
+          },
+          {
+            "text": "Reference Error",
+            "value": "3"
+          }
         ],
         "answer": 0
       },
       {
         "question": "JavaScript File Has An Extension Of php",
-        "answers": [
-          { "text": ".java", "value": "0" },
-          { "text": ".js", "value": "1" },
-          { "text": ".xml", "value": "2" },
-          { "text": ".javascript", "value": "3" }
+        "answers": [{
+            "text": ".java",
+            "value": "0"
+          },
+          {
+            "text": ".js",
+            "value": "1"
+          },
+          {
+            "text": ".xml",
+            "value": "2"
+          },
+          {
+            "text": ".javascript",
+            "value": "3"
+          }
         ],
         "answer": 1
-      } 
+      }
     ],
-    "python": [
-      {
+    "python": [{
         "question": "How can you get the type of arguments passed to a function? python",
-        "answers": [
-          { "text": "Using typeof operator py", "value": "0" },
-          { "text": "Using getType function py", "value": "1" },
-          { "text": "Both of the above", "value": "2" },
-          { "text": "None of the above", "value": "3" }
+        "answers": [{
+            "text": "Using typeof operator py",
+            "value": "0"
+          },
+          {
+            "text": "Using getType function py",
+            "value": "1"
+          },
+          {
+            "text": "Both of the above",
+            "value": "2"
+          },
+          {
+            "text": "None of the above",
+            "value": "3"
+          }
         ],
         "answer": 1
       },
       {
         "question": "How can you get the type of arguments passed to a function? puthon",
-        "answers": [
-          { "text": "true", "value": "0" },
-          { "text": "false", "value": "1" },
-          { "text": "Syntax Error", "value": "2" },
-          { "text": "Reference Error", "value": "3" }
+        "answers": [{
+            "text": "true",
+            "value": "0"
+          },
+          {
+            "text": "false",
+            "value": "1"
+          },
+          {
+            "text": "Syntax Error",
+            "value": "2"
+          },
+          {
+            "text": "Reference Error",
+            "value": "3"
+          }
         ],
         "answer": 0
       },
       {
         "question": "JavaScript File Has An Extension Of python",
-        "answers": [
-          { "text": ".java", "value": "0" },
-          { "text": ".js", "value": "1" },
-          { "text": ".xml", "value": "2" },
-          { "text": ".javascript", "value": "3" }
+        "answers": [{
+            "text": ".java",
+            "value": "0"
+          },
+          {
+            "text": ".js",
+            "value": "1"
+          },
+          {
+            "text": ".xml",
+            "value": "2"
+          },
+          {
+            "text": ".javascript",
+            "value": "3"
+          }
         ],
         "answer": 1
       }
