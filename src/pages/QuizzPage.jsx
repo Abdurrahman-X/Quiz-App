@@ -54,7 +54,7 @@ const QuizzPage = props => {
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
       setSelectedAnswer(null)
-
+      console.log(selectedAnswer)
       if (questionIndex < props.questions.length - 1) {
         setQuestionIndex(questionIndex + 1)
       } else {
@@ -113,8 +113,7 @@ const QuizzPage = props => {
           ) : (
             <>
               <h5>
-                Question {questionIndex + 1} of
-                {props.questions.length}
+                Question {questionIndex + 1} of {props.questions.length}
               </h5>
               <h4>{props.questions[questionIndex].question}</h4>
             </>
