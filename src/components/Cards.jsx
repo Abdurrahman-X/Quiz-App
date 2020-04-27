@@ -5,6 +5,7 @@ import Php from "../images/php.png"
 import Python from "../images/python.png"
 import JavaScript from "../pages/JavaScript"
 import { CardStyle } from "./Style/HomeStyle"
+import Questions from "./Questions.json"
 const Cards = () => {
   const [Card] = useState([
     {
@@ -36,7 +37,7 @@ const Cards = () => {
           onClick={() => navigate(`/${card.title}`)}
         >
           <h1> {card.title} </h1>
-          <h5> This quiz contains 15 questions about {card.title} </h5>
+          <h5> This quiz contains 10 questions about {card.title} </h5>
           <img
             src={card.logo}
             alt={card.title}

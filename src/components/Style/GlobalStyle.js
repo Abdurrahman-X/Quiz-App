@@ -25,5 +25,11 @@ export default createGlobalStyle `
     button:focus{
       outline: none;
     }
+
+
+    a {
+      color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer; 
+    }
   `
-   
