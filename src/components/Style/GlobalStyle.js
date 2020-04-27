@@ -20,8 +20,10 @@ export default createGlobalStyle `
       border-radius:5px
     }
     button:hover{
-      
-      border: 1px solid #A4C5FC;
+      border: 1px solid #5d5d9f;
     }
-    
+    button:focus{
+      outline: none;
+    }
   `
+   

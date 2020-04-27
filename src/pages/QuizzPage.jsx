@@ -3,9 +3,9 @@ import { navigate } from "gatsby"
 import Results from "./Results.jsx"
 import AnswerInput from "../components/AnswerInput"
 import GlobalStyle from "../components/Style/GlobalStyle"
-import Js from "../images/javascript.png"
-import Php from "../images/Php.png"
-import Python from "../images/Python.png"
+import Js from "../images/js_logo.png"
+import Php from "../images/php_logo.png"
+import Python from "../images/py_logo.png"
 import {
   Sideleft,
   Logo,
@@ -13,6 +13,7 @@ import {
   Wrapper,
   Answer,
   Container,
+  Content
 } from "../components/Style/QuizzStyle"
 
 const QuizzPage = props => {
@@ -48,14 +49,13 @@ const QuizzPage = props => {
 
   const nextQuestion = () => {
     if (!selectedAnswer) {
-      setError("select answer")
+      setError("Please select answer")
     } else {
-      props.questions[questionIndex].answer === selectedAnswer
+      props.questions[questionIndex].correct_answer == selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
-      setSelectedAnswer(null)
-      console.log(selectedAnswer)
-      if (questionIndex < props.questions.length - 1) {
+        setSelectedAnswer(null)
+        if (questionIndex < props.questions.length - 1) {
         setQuestionIndex(questionIndex + 1)
       } else {
         setShowResults(true)
@@ -83,11 +83,13 @@ const QuizzPage = props => {
         <div>
           {props.questions[questionIndex].answers.map((answer, i) => (
             <Answer key={i}>
-              <AnswerInput answer={answer} onChange={e => handleCheck(e)} />
+              <AnswerInput answer={answer} selectedAnswer={selectedAnswer} onChange={e => handleCheck(e)} />
               <label htmlFor={answer.text}> {answer.text}</label>
             </Answer>
           ))}
+          <div style={{textAlign:'center'}}>
           <button onClick={nextQuestion}>Next</button>
+          </div>
         </div>
       )
     }
@@ -99,23 +101,23 @@ const QuizzPage = props => {
         <Sideleft>
           <Logo onClick={() => navigate(`/`)}>
             {page === "javascript" ? (
-              <img src={Js} alt="quizz logo" />
+              <img src={Js}  alt="quizz logo" />
             ) : page === "php" ? (
               <img src={Php} alt="quizz logo" />
             ) : page === "python" ? (
               <img src={Python} alt="quizz logo" />
             ) : null}
-
-            <h5>{props.pathname}</h5>
           </Logo>
           {showResults ? (
             <h4> Congratulations! You completed the test </h4>
           ) : (
             <>
+            <Content>
               <h5>
                 Question {questionIndex + 1} of {props.questions.length}
               </h5>
               <h4>{props.questions[questionIndex].question}</h4>
+            </Content>
             </>
           )}
         </Sideleft>
