@@ -80,6 +80,7 @@ display  : flex;
 flex-direction:column;
 `
 export const Answer = styled.div `
+min-width: 550px;
   background : #5d5d9f;
   display: flex;
   align-items: center;
@@ -87,4 +88,7 @@ export const Answer = styled.div `
   border-radius: 5px;
   padding: 0.5rem;
 margin-top : 1rem;
+@media (max-width: 455px) {
+    width:auto
+  }
 `
