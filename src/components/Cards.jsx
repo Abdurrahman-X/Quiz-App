@@ -4,6 +4,7 @@ import Js from "../images/javascript.png"
 import Php from "../images/php.png"
 import Python from "../images/python.png"
 import { CardStyle } from "./Style/HomeStyle"
+import Questions from "./Questions.json"
 const Cards = () => {
   const [Card] = useState([
     {

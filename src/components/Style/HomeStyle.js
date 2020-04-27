@@ -8,6 +8,7 @@ export const Wrapper = styled.div `
   height: 100vh;
 `
 export const Sideleft = styled.div `
+position: relative;
   grid-column-start: span 6;
   background-color: #000;
   padding: 30px;
