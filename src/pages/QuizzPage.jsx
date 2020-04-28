@@ -118,9 +118,9 @@ const QuizzPage = ({pathname,questions}) => {
           ) : (
             <>
               <Content>
-                <h5>
+                {/* <h5>
                   Question {questionIndex + 1} of {questions.length}
-                </h5>
+                </h5> */}
                 <h4>{questions[questionIndex].question}</h4>
               </Content>
             </>
