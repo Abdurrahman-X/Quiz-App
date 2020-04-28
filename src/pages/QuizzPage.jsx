@@ -17,13 +17,13 @@ import {
   Container,
 } from "../components/Style/QuizzStyle"
 
-const QuizzPage = props => {
+const QuizzPage = ({pathname,questions}) => {
   useEffect(() => {
-    if (props.pathname === "javascript") {
+    if (pathname === "javascript") {
       setPage("javascript")
-    } else if (props.pathname === "php") {
+    } else if (pathname === "php") {
       setPage("php")
-    } else if (props.pathname === "python") {
+    } else if (pathname === "python") {
       setPage("python")
     }
   }, [])
@@ -52,11 +52,11 @@ const QuizzPage = props => {
     if (!selectedAnswer) {
       setError("Please select answer")
     } else {
-      props.questions[questionIndex].correct_answer == selectedAnswer
+      questions[questionIndex].correct_answer == selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
       setSelectedAnswer(null)
-      if (questionIndex < props.questions.length - 1) {
+      if (questionIndex < questions.length - 1) {
         setQuestionIndex(questionIndex + 1)
       } else {
         setShowResults(true)
@@ -75,14 +75,14 @@ const QuizzPage = props => {
         <Results
           correctAnswers={correctAnswers}
           wrongAnswers={wrongAnswers}
-          numberOfQuestions={props.questions.length}
+          numberOfQuestions={questions.length}
           retakeTest={retakeTest}
         />
       )
     } else {
       return (
         <div>
-          {props.questions[questionIndex].answers.map((answer, i) => (
+          {questions[questionIndex].answers.map((answer, i) => (
             <Answer key={i}>
               <AnswerInput
                 answer={answer}
@@ -119,9 +119,9 @@ const QuizzPage = props => {
             <>
               <Content>
                 <h5>
-                  Question {questionIndex + 1} of {props.questions.length}
+                  Question {questionIndex + 1} of {questions.length}
                 </h5>
-                <h4>{props.questions[questionIndex].question}</h4>
+                <h4>{questions[questionIndex].question}</h4>
               </Content>
             </>
           )}
