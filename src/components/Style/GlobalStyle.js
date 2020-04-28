@@ -1,8 +1,6 @@
-import {
-  createGlobalStyle
-} from "styled-components"
+import { createGlobalStyle } from "styled-components"
 
-export default createGlobalStyle `
+export default createGlobalStyle`
   body{
       padding: 0;
       margin: 0;
@@ -16,7 +14,7 @@ export default createGlobalStyle `
       min-width: 200px;
       padding: 10px;
       cursor: pointer;
-      margin-top:10px;
+      margin:10px;
       border-radius:5px
     }
     button:hover{
@@ -25,8 +23,6 @@ export default createGlobalStyle `
     button:focus{
       outline: none;
     }
-
-
     a {
       color:#00A0C6; 
      text-decoration:none; 

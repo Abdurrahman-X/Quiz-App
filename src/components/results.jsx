@@ -8,7 +8,7 @@ const Results = ({
   retakeTest,
 }) => {
   return (
-    <>
+    <div style={{ textAlign: "center" }}>
       <p>
         {correctAnswers} Correct answers and {wrongAnswers} Wrong answers
       </p>
@@ -21,7 +21,7 @@ const Results = ({
         <button onClick={() => navigate("/")}>Home</button>
         <button onClick={retakeTest}>Retake the test</button>
       </Btns>
-    </>
+    </div>
   )
 }
 export default Results

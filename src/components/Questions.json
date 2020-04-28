@@ -88,7 +88,8 @@
           }
         ],
         "correct_answer": 4
-      }, {
+      },
+      {
         "question": "How does a function create a closure?",
         "answers": [
           {
@@ -131,7 +132,8 @@
           }
         ],
         "correct_answer": 1
-      },{
+      },
+      {
         "question": "Which statement is the correct way to create a variable called rate and assign it the value 100?",
         "answers": [
           {
@@ -152,7 +154,8 @@
           }
         ],
         "correct_answer": 1
-      },{
+      },
+      {
         "question": "Which operator returns true if the two compared values are not equal?",
         "answers": [
           {
@@ -173,7 +176,8 @@
           }
         ],
         "correct_answer": 4
-      },{
+      },
+      {
         "question": "When would you use a conditional statement?",
         "answers": [
           {
@@ -194,7 +198,8 @@
           }
         ],
         "correct_answer": 2
-      },{
+      },
+      {
         "question": "You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
         "answers": [
           {
@@ -283,8 +288,7 @@
           }
         ],
         "correct_answer": 0
-      }
-      ,
+      },
       {
         "question": "Which of the following function sorts an array in reverse order?",
         "answers": [
@@ -505,7 +509,7 @@
             "value": "3"
           }
         ],
-        "correct_answer":3
+        "correct_answer": 3
       },
       {
         "question": "Which options are correct to create an empty set in Python?",
@@ -659,8 +663,8 @@
             "value": "3"
           }
         ],
-        "correct_answer":3
-      } 
+        "correct_answer": 3
+      }
     ]
   }
 }
