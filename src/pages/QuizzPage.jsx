@@ -26,7 +26,7 @@ const QuizzPage = ({pathname,questions}) => {
     } else if (pathname === "python") {
       setPage("python")
     }
-  }, [])
+  }, [pathname,questions])
 
   const [questionIndex, setQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
@@ -52,7 +52,7 @@ const QuizzPage = ({pathname,questions}) => {
     if (!selectedAnswer) {
       setError("Please select answer")
     } else {
-      questions[questionIndex].correct_answer == selectedAnswer
+      questions[questionIndex].correct_answer === selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
         : setWrongAnswers(wrongAnswers + 1)
       setSelectedAnswer(null)

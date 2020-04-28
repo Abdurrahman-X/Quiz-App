@@ -21,7 +21,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       },
       {
         "question": "Which property references the DOM object that dispatched an event? ",
@@ -43,7 +43,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "Which method converts JSON data to a JavaScript object?",
@@ -65,7 +65,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       },
       {
         "question": "Which statement creates a new function called discountPrice?",
@@ -87,7 +87,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 4
+        "correct_answer": "4"
       },
       {
         "question": "How does a function create a closure?",
@@ -109,7 +109,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       },
       {
         "question": "Which statement creates a new object using the Person constructor?",
@@ -131,7 +131,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "Which statement is the correct way to create a variable called rate and assign it the value 100?",
@@ -153,7 +153,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "Which operator returns true if the two compared values are not equal?",
@@ -175,7 +175,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 4
+        "correct_answer": "4"
       },
       {
         "question": "When would you use a conditional statement?",
@@ -197,7 +197,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       },
       {
         "question": "You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
@@ -219,7 +219,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       }
     ],
     "php": [
@@ -243,7 +243,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "Which of the following type of variables are named and indexed collections of other values?",
@@ -265,7 +265,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "Which of the following magic constant of PHP returns class method name?",
@@ -287,7 +287,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Which of the following function sorts an array in reverse order?",
@@ -309,7 +309,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Q 6 - Which of the following function opens a file?",
@@ -331,7 +331,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Which of the following is used to get cookies?",
@@ -353,7 +353,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "Which of the following provides content type of the uploaded file in PHP?",
@@ -375,7 +375,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "Which of the following method connect a MySql database using PHP?",
@@ -397,7 +397,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Which of the following method of Exception class retrieve the error message when error occured?",
@@ -419,7 +419,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Which of the following is correct about constants vs variables in PHP?",
@@ -441,7 +441,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       }
     ],
     "python": [
@@ -465,7 +465,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "What is output of following −print(''abbzxyzxzxabb''.count(‘abb’,-10,-1))",
@@ -487,7 +487,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "What is the output of the following code? eval(''1 + 3 * 2'')",
@@ -509,7 +509,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "Which options are correct to create an empty set in Python?",
@@ -531,7 +531,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "Which code is used to open a file for binary writing?",
@@ -553,7 +553,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 1
+        "correct_answer": "1"
       },
       {
         "question": "Select the correct option to draw a rectangle centred at 50,50 with width and height as 50, 70 respectively.",
@@ -575,7 +575,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 2
+        "correct_answer": "2"
       },
       {
         "question": " Which module is used in python to create Graphics?",
@@ -597,7 +597,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "Select all correct float numbers",
@@ -619,7 +619,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 0
+        "correct_answer": "0"
       },
       {
         "question": "What is the output of print(abs(-45.300))",
@@ -641,7 +641,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       },
       {
         "question": "What is the type of the following variable x = -5j",
@@ -663,7 +663,7 @@
             "value": "3"
           }
         ],
-        "correct_answer": 3
+        "correct_answer": "3"
       }
     ]
   }
