@@ -21,6 +21,22 @@ const IndexPage = () => (
 
       <Sideright>
         <Cards />
+        <div
+          style={{
+            alignSelf: "flex-end",
+            marginRight: "20px",
+            marginBottom: "10px",
+          }}
+        >
+          Made by{" "}
+          <a href="https://github.com/LaasriNadia" target="_blank">
+            Nadia
+          </a>{" "}
+          &{" "}
+          <a href="https://github.com/ismail-elmahi" target="_blank">
+            Ismail
+          </a>{" "}
+        </div>
       </Sideright>
     </Wrapper>
   </>

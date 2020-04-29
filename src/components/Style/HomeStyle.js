@@ -1,11 +1,13 @@
-import styled, { css } from "styled-components"
+import styled, {
+  css
+} from "styled-components"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div `
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
 `
-export const Sideleft = styled.div`
+export const Sideleft = styled.div `
   position: relative;
   grid-column-start: span 6;
   background-color: #000;
@@ -30,7 +32,7 @@ export const Sideleft = styled.div`
   }
 `
 
-export const Choose = styled.div`
+export const Choose = styled.div `
   padding: 40px;
   text-align: center;
   h3 {
@@ -42,7 +44,7 @@ export const Choose = styled.div`
     border-radius: 4px;
   }
 `
-export const Sideright = styled.div`
+export const Sideright = styled.div `
   grid-column-start: span 6;
   color: #000;
   background: #fbfbfb;
@@ -56,10 +58,10 @@ export const Sideright = styled.div`
     padding: 10px;
   }
 `
-export const CardStyle = styled.div`
+export const CardStyle = styled.div `
   background: #fff;
   padding: 10px 30px;
-  margin: 15px 0;
+  margin: 5px 0;
   text-align: center;
   cursor: pointer;
   box-shadow: 0px 0px 10px -5px #7b7b7b;
