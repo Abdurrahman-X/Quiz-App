@@ -1,14 +1,12 @@
-import styled, {
-  css
-} from "styled-components"
+import styled, { css } from "styled-components"
 
-export const Wrapper = styled.div `
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
 `
-export const Sideleft = styled.div `
-position: relative;
+export const Sideleft = styled.div`
+  position: relative;
   grid-column-start: span 6;
   background-color: #000;
   padding: 30px;
@@ -22,17 +20,17 @@ position: relative;
     margin: 0px;
     font-family: muli, sans-serif;
   }
-  @media(max-width:810px) {
+  @media (max-width: 810px) {
     grid-column-start: span 12;
   }
-  @media(max-width:455px) {
-    h4{
+  @media (max-width: 455px) {
+    h4 {
       font-size: 2rem;
     }
   }
 `
 
-export const Choose = styled.div `
+export const Choose = styled.div`
   padding: 40px;
   text-align: center;
   h3 {
@@ -44,21 +42,21 @@ export const Choose = styled.div `
     border-radius: 4px;
   }
 `
-export const Sideright = styled.div `
+export const Sideright = styled.div`
   grid-column-start: span 6;
   color: #000;
   background: #fbfbfb;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  @media(max-width:810px) {
+  @media (max-width: 810px) {
     grid-column-start: span 12;
   }
-  @media(max-width:455px) {
-    padding:10px;
+  @media (max-width: 455px) {
+    padding: 10px;
   }
 `
-export const CardStyle = styled.div `
+export const CardStyle = styled.div`
   background: #fff;
   padding: 10px 30px;
   margin: 15px 0;
@@ -78,5 +76,4 @@ export const CardStyle = styled.div `
     margin: 10px;
     font-size: 14px;
   }
-  
 `
