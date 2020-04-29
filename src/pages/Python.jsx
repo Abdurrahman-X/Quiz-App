@@ -1,6 +1,6 @@
 import React from "react"
 import QuizzPage from "./QuizzPage.jsx"
-import questionsData from "../components/Questions.json"
+import questionsData from "../data/Questions.json"
 const Python = () => {
   return (
     <QuizzPage

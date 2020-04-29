@@ -3,9 +3,9 @@ import { navigate } from "gatsby"
 import Results from "../components/results"
 import AnswerInput from "../components/AnswerInput"
 import GlobalStyle from "../components/Style/GlobalStyle"
-import Js from "../images/js_logo.png"
-import Php from "../images/php_logo.png"
-import Python from "../images/py_logo.png"
+import Js from "../data/images/js_logo.png"
+import Php from "../data/images/php_logo.png"
+import Python from "../data/images/py_logo.png"
 import {
   Sideleft,
   Logo,

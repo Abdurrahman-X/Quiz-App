@@ -29,11 +29,19 @@ const IndexPage = () => (
           }}
         >
           Made by{" "}
-          <a href="https://github.com/LaasriNadia" target="_blank">
+          <a
+            href="https://github.com/LaasriNadia"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Nadia
           </a>{" "}
           &{" "}
-          <a href="https://github.com/ismail-elmahi" target="_blank">
+          <a
+            href="https://github.com/ismail-elmahi"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Ismail
           </a>{" "}
         </div>

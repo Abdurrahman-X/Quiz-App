@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
-import Js from "../images/javascript.png"
-import Php from "../images/php.png"
-import Python from "../images/python.png"
+import Js from "../data/images/javascript.png"
+import Php from "../data/images/php.png"
+import Python from "../data/images/python.png"
 import { CardStyle } from "./Style/HomeStyle"
 const Cards = () => {
   const [Card] = useState([
