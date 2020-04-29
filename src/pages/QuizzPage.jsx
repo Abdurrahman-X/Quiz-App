@@ -17,7 +17,7 @@ import {
   Container,
 } from "../components/Style/QuizzStyle"
 
-const QuizzPage = ({pathname,questions}) => {
+const QuizzPage = ({ pathname, questions }) => {
   useEffect(() => {
     if (pathname === "javascript") {
       setPage("javascript")
@@ -26,7 +26,7 @@ const QuizzPage = ({pathname,questions}) => {
     } else if (pathname === "python") {
       setPage("python")
     }
-  }, [pathname,questions])
+  }, [pathname, questions])
 
   const [questionIndex, setQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
@@ -92,8 +92,18 @@ const QuizzPage = ({pathname,questions}) => {
               <label htmlFor={answer.text}> {answer.text}</label>
             </Answer>
           ))}
-          <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
             <button onClick={nextQuestion}>Next</button>
+            <a href="/" style={{ color: "#637a80" }}>
+              Quit the quizz
+            </a>
           </div>
         </div>
       )
