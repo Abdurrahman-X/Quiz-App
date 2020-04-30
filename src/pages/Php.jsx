@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react"
 import QuizzPage from "./QuizzPage.jsx"
-
 const Php = () => {
   useEffect(() => {
-    import("../static/php.json").then(module => {
+    import("../../static/php.json").then(module => {
       setPhpQst(module.default)
     })
   }, [])

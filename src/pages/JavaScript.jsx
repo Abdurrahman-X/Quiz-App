@@ -3,7 +3,7 @@ import QuizzPage from "./QuizzPage.jsx"
 
 const JavaScript = () => {
   useEffect(() => {
-    import("../static/Js.json").then(module => {
+    import("../../static/Js.json").then(module => {
       setQst(module.default)
     })
   }, [])
