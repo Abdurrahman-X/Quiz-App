@@ -1,0 +1,211 @@
+[{
+        "question": "What is output for −' ' in 'python'",
+        "answers": [{
+                "text": "'python'",
+                "value": "0"
+            },
+            {
+                "text": "false",
+                "value": "1"
+            },
+            {
+                "text": "Name error",
+                "value": "2"
+            },
+            {
+                "text": "true",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "What is output of following −print(''abbzxyzxzxabb''.count(‘abb’,-10,-1))",
+        "answers": [{
+                "text": "2",
+                "value": "0"
+            },
+            {
+                "text": "0",
+                "value": "1"
+            },
+            {
+                "text": "1",
+                "value": "2"
+            },
+            {
+                "text": "Error",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "What is the output of the following code? eval(''1 + 3 * 2'')",
+        "answers": [{
+                "text": "‘1+6’",
+                "value": "0"
+            },
+            {
+                "text": "‘4*2’",
+                "value": "1"
+            },
+            {
+                "text": "‘1+3*2’",
+                "value": "2"
+            },
+            {
+                "text": "7",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which options are correct to create an empty set in Python?",
+        "answers": [{
+                "text": "{}",
+                "value": "0"
+            },
+            {
+                "text": "[]",
+                "value": "1"
+            },
+            {
+                "text": "()",
+                "value": "2"
+            },
+            {
+                "text": "set()",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which code is used to open a file for binary writing?",
+        "answers": [{
+                "text": "''w''",
+                "value": "0"
+            },
+            {
+                "text": "''wb''",
+                "value": "1"
+            },
+            {
+                "text": "''r+''",
+                "value": "2"
+            },
+            {
+                "text": "''a''",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Select the correct option to draw a rectangle centred at 50,50 with width and height as 50, 70 respectively.",
+        "answers": [{
+                "text": "Canvas.create_rect(50,50,50,70)",
+                "value": "0"
+            },
+            {
+                "text": "Canvas.create_rect(50,70,50,50)",
+                "value": "1"
+            },
+            {
+                "text": "Canvas.create_rectangle(50,50,50,70)",
+                "value": "2"
+            },
+            {
+                "text": "Tkinter.create_rect(50,50,50,70)",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": " Which module is used in python to create Graphics?",
+        "answers": [{
+                "text": "Turtle",
+                "value": "0"
+            },
+            {
+                "text": "Canvas",
+                "value": "1"
+            },
+            {
+                "text": " Tkinterr",
+                "value": "2"
+            },
+            {
+                "text": "Graphics",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Select all correct float numbers",
+        "answers": [{
+                "text": "a = 10.1256",
+                "value": "0"
+            },
+            {
+                "text": "b = -10.5",
+                "value": "1"
+            },
+            {
+                "text": "c = 42e3",
+                "value": "2"
+            },
+            {
+                "text": "d = -68.7e100",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "What is the output of print(abs(-45.300))",
+        "answers": [{
+                "text": "45.3",
+                "value": "0"
+            },
+            {
+                "text": " -45.3",
+                "value": "1"
+            },
+            {
+                "text": "-45.300",
+                "value": "2"
+            },
+            {
+                "text": "45.300",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "What is the type of the following variable x = -5j",
+        "answers": [{
+                "text": "int",
+                "value": "0"
+            },
+            {
+                "text": "complex",
+                "value": "1"
+            },
+            {
+                "text": "real",
+                "value": "2"
+            },
+            {
+                "text": "imaginary",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    }
+]

@@ -1,0 +1,211 @@
+[{
+        "question": "Q 1 - Which of the following is correct about PHP?",
+        "answers": [{
+                "text": " PHP is a recursive acronym for PHP: Hypertext Preprocessor.",
+                "value": "0"
+            },
+            {
+                "text": "PHP is a server side scripting language that is embedded in HTML.",
+                "value": "1"
+            },
+            {
+                "text": "It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.",
+                "value": "2"
+            },
+            {
+                "text": "All of the above.",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which of the following type of variables are named and indexed collections of other values?",
+        "answers": [{
+                "text": "String",
+                "value": "0"
+            },
+            {
+                "text": "Array",
+                "value": "1"
+            },
+            {
+                "text": "Objects",
+                "value": "2"
+            },
+            {
+                "text": "Resources",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Which of the following magic constant of PHP returns class method name?",
+        "answers": [{
+                "text": "_METHOD_",
+                "value": "0"
+            },
+            {
+                "text": " _FILE_",
+                "value": "1"
+            },
+            {
+                "text": "_FUNCTION_",
+                "value": "2"
+            },
+            {
+                "text": "_CLASS_",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Which of the following function sorts an array in reverse order?",
+        "answers": [{
+                "text": "rsort()",
+                "value": "0"
+            },
+            {
+                "text": " sort()",
+                "value": "1"
+            },
+            {
+                "text": "shuffle()",
+                "value": "2"
+            },
+            {
+                "text": "reset()",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Q 6 - Which of the following function opens a file?",
+        "answers": [{
+                "text": "fopen()",
+                "value": "0"
+            },
+            {
+                "text": "fread()",
+                "value": "1"
+            },
+            {
+                "text": "filesize()",
+                "value": "2"
+            },
+            {
+                "text": "file_exist()",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Which of the following is used to get cookies?",
+        "answers": [{
+                "text": "getcookie() function",
+                "value": "0"
+            },
+            {
+                "text": "$_COOKIE variable",
+                "value": "1"
+            },
+            {
+                "text": "isset() function",
+                "value": "2"
+            },
+            {
+                "text": "None of the above.",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Which of the following provides content type of the uploaded file in PHP?",
+        "answers": [{
+                "text": "$_FILES['file']['tmp_name']",
+                "value": "0"
+            },
+            {
+                "text": "$_FILES['file']['name']",
+                "value": "1"
+            },
+            {
+                "text": "$_FILES['file']['size']",
+                "value": "2"
+            },
+            {
+                "text": "$_FILES['file']['type']",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which of the following method connect a MySql database using PHP?",
+        "answers": [{
+                "text": "mysql_connect()",
+                "value": "0"
+            },
+            {
+                "text": "mysql_query()",
+                "value": "1"
+            },
+            {
+                "text": "mysql_close()",
+                "value": "2"
+            },
+            {
+                "text": "None of the above",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Which of the following method of Exception class retrieve the error message when error occured?",
+        "answers": [{
+                "text": "getMessage()",
+                "value": "0"
+            },
+            {
+                "text": "getCode()",
+                "value": "1"
+            },
+            {
+                "text": "getFile()",
+                "value": "2"
+            },
+            {
+                "text": "getLine()",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "0"
+    },
+    {
+        "question": "Which of the following is correct about constants vs variables in PHP?",
+        "answers": [{
+                "text": "There is no need to write a dollar sign ($) before a constant, where as in Variable one has to write a dollar sign.",
+                "value": "0"
+            },
+            {
+                "text": "Constants cannot be defined by simple assignment, they may only be defined using the define() function.",
+                "value": "1"
+            },
+            {
+                "text": "Both of the above.",
+                "value": "2"
+            },
+            {
+                "text": "None of the above.",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    }
+]

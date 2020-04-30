@@ -1,13 +1,13 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import QuizzPage from "./QuizzPage.jsx"
-import questionsData from "../data/Questions.json"
 const Python = () => {
-  return (
-    <QuizzPage
-      pathname="python"
-      questions={questionsData.questions["python"]}
-    />
-  )
+  useEffect(() => {
+    import("../static/python.json").then(module => {
+      setPythonQst(module.default)
+    })
+  }, [])
+  const [pythonQst, setPythonQst] = useState([])
+  return <QuizzPage pathname="python" questions={pythonQst} />
 }
 
 export default Python

@@ -1,13 +1,15 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import QuizzPage from "./QuizzPage.jsx"
-import questionsData from "../data/Questions.json"
+
 const JavaScript = () => {
-  return (
-    <QuizzPage
-      pathname="javascript"
-      questions={questionsData.questions["javascript"]}
-    />
-  )
+  useEffect(() => {
+    import("../static/Js.json").then(module => {
+      setQst(module.default)
+    })
+  }, [])
+  const [qst, setQst] = useState([])
+
+  return <QuizzPage pathname="javascript" questions={qst} />
 }
 
 export default JavaScript

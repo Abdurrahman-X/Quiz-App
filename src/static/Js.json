@@ -1,0 +1,211 @@
+[{
+        "question": " How is a forEach statement different from a for statement?",
+        "answers": [{
+                "text": "Only a for statement uses a callback function",
+                "value": "0"
+            },
+            {
+                "text": "A for statement is generic, but a forEach statement can be used only with an array",
+                "value": "1"
+            },
+            {
+                "text": "Only a forEach statement lets you specify your own iterator.",
+                "value": "2"
+            },
+            {
+                "text": "A forEach statement is generic, but a for statement ca be used only with an array",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Which property references the DOM object that dispatched an event? ",
+        "answers": [{
+                "text": "self",
+                "value": "0"
+            },
+            {
+                "text": "object",
+                "value": "1"
+            },
+            {
+                "text": "target ",
+                "value": "2"
+            },
+            {
+                "text": "source",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which method converts JSON data to a JavaScript object?",
+        "answers": [{
+                "text": "SON.fromString();",
+                "value": "0"
+            },
+            {
+                "text": "JSON.parse()",
+                "value": "1"
+            },
+            {
+                "text": "JSON.toObject()",
+                "value": "2"
+            },
+            {
+                "text": "JSON.stringify()",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Which statement creates a new function called discountPrice?",
+        "answers": [{
+                "text": "let discountPrice = function(price) { return price * 0.85; };",
+                "value": "0"
+            },
+            {
+                "text": "let discountPrice(price) { return price * 0.85; };",
+                "value": "1"
+            },
+            {
+                "text": "let function = discountPrice(price) { return price * 0.85; };",
+                "value": "2"
+            },
+            {
+                "text": "discountPrice = function(price) { return price * 0.85; };",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "4"
+    },
+    {
+        "question": "How does a function create a closure?",
+        "answers": [{
+                "text": "It reloads the document whenever the value changes.",
+                "value": "0"
+            },
+            {
+                "text": "It returns a reference to a variable in its parent scope",
+                "value": "1"
+            },
+            {
+                "text": "It completes execution without returning",
+                "value": "2"
+            },
+            {
+                "text": "It copies a local variable to the global scope",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "Which statement creates a new object using the Person constructor?",
+        "answers": [{
+                "text": "var student = new Person();",
+                "value": "0"
+            },
+            {
+                "text": "var student = construct Person;",
+                "value": "1"
+            },
+            {
+                "text": "var student = Person();",
+                "value": "2"
+            },
+            {
+                "text": "var student = construct Person();",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Which statement is the correct way to create a variable called rate and assign it the value 100?",
+        "answers": [{
+                "text": "let rate = 100; ",
+                "value": "0"
+            },
+            {
+                "text": "let 100 = rate;",
+                "value": "1"
+            },
+            {
+                "text": "100 = let rate;",
+                "value": "2"
+            },
+            {
+                "text": "rate = 100;",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Which operator returns true if the two compared values are not equal?",
+        "answers": [{
+                "text": "<>",
+                "value": "0"
+            },
+            {
+                "text": "~",
+                "value": "1"
+            },
+            {
+                "text": "==!",
+                "value": "2"
+            },
+            {
+                "text": "!==",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "4"
+    },
+    {
+        "question": "When would you use a conditional statement?",
+        "answers": [{
+                "text": "When you want to reuse a set of statements multiple times.",
+                "value": "0"
+            },
+            {
+                "text": "When you want your code to choose between multiple options",
+                "value": "1"
+            },
+            {
+                "text": "When you want to group data together",
+                "value": "2"
+            },
+            {
+                "text": "When you want to loop through a group of statement.",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
+        "answers": [{
+                "text": "/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/",
+                "value": "0"
+            },
+            {
+                "text": "/[0-5]:[0-5]:[05]{2,}/",
+                "value": "1"
+            },
+            {
+                "text": "J/[0-9]+:[0-9]+:[0-9]+/",
+                "value": "2"
+            },
+            {
+                "text": "/ : : /",
+                "value": "3"
+            }
+        ],
+        "correct_answer": "3"
+    }
+]

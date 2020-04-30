@@ -79,7 +79,7 @@ const QuizzPage = ({ pathname, questions }) => {
           retakeTest={retakeTest}
         />
       )
-    } else {
+    } else if (questions.length != 0) {
       return (
         <div>
           {questions[questionIndex].answers.map((answer, i) => (
@@ -107,6 +107,8 @@ const QuizzPage = ({ pathname, questions }) => {
           </div>
         </div>
       )
+    } else {
+      return
     }
   }
   return (
@@ -131,7 +133,9 @@ const QuizzPage = ({ pathname, questions }) => {
                 {/* <h5>
                   Question {questionIndex + 1} of {questions.length}
                 </h5> */}
-                <h4>{questions[questionIndex].question}</h4>
+                {questions.length != 0 ? (
+                  <h4>{questions[questionIndex].question}</h4>
+                ) : null}
               </Content>
             </>
           )}
