@@ -16,17 +16,27 @@ import {
   Error,
   Container,
 } from "../components/Style/QuizzStyle"
+// import questionsData from "../components/Questions.json"
 
-const QuizzPage = ({ pathname, questions }) => {
+const QuizzPage = ({ pathname }) => {
   useEffect(() => {
     if (pathname === "javascript") {
       setPage("javascript")
+      import("../../static/javascript.json").then(module => {
+        setQst(module.default)
+      })
     } else if (pathname === "php") {
       setPage("php")
+      import("../../static/php.json").then(module => {
+        setQst(module.default)
+      })
     } else if (pathname === "python") {
       setPage("python")
+      import("../../static/php.json").then(module => {
+        setQst(module.default)
+      })
     }
-  }, [pathname, questions])
+  }, [pathname])
 
   const [questionIndex, setQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
@@ -35,6 +45,7 @@ const QuizzPage = ({ pathname, questions }) => {
   const [showResults, setShowResults] = useState(false)
   const [error, setError] = useState("")
   const [page, setPage] = useState("")
+  const [questions, setQst] = useState([])
 
   const handleCheck = e => {
     setSelectedAnswer(e.target.value)

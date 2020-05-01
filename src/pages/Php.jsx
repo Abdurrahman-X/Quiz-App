@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import QuizzPage from "./QuizzPage.jsx"
+// import questionsData from "../components/Questions.json"
 const Php = () => {
-  useEffect(() => {
-    import("../../static/php.json").then(module => {
-      setPhpQst(module.default)
-    })
-  }, [])
-  const [phpQst, setPhpQst] = useState([])
-
-  return <QuizzPage pathname="php" questions={phpQst} />
+  return <QuizzPage pathname="php" />
 }
 
 export default Php
