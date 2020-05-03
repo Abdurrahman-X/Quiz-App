@@ -12,6 +12,8 @@ This app contains 3 challenges to test your skills in : Javascript, Php and Pyth
 
 This is the live version of the App :
 
+- [Live version](https://quizzapp.netlify.app/)
+
 ## Built With
 
 - [Gatsby](https://gatsbyjs.org/) - framework based on React
