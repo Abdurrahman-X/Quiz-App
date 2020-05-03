@@ -6,6 +6,9 @@ import GlobalStyle from "../components/Style/GlobalStyle"
 import Js from "../data/images/js_logo.png"
 import Php from "../data/images/php_logo.png"
 import Python from "../data/images/py_logo.png"
+
+import Bounce from "react-reveal/Bounce"
+
 import {
   Sideleft,
   Logo,
@@ -16,23 +19,22 @@ import {
   Error,
   Container,
 } from "../components/Style/QuizzStyle"
-// import questionsData from "../components/Questions.json"
 
 const QuizzPage = ({ pathname }) => {
   useEffect(() => {
     if (pathname === "javascript") {
-      setPage("javascript")
+      setPage("JavaScript")
       import("../../static/javascript.json").then(module => {
         setQst(module.default)
       })
     } else if (pathname === "php") {
-      setPage("php")
+      setPage("Php")
       import("../../static/php.json").then(module => {
         setQst(module.default)
       })
     } else if (pathname === "python") {
-      setPage("python")
-      import("../../static/php.json").then(module => {
+      setPage("Python")
+      import("../../static/python.json").then(module => {
         setQst(module.default)
       })
     }
@@ -56,12 +58,16 @@ const QuizzPage = ({ pathname }) => {
     if (!error) {
       return
     }
-    return <Error style={{ color: "red", fontSize: "20px" }}>{error}</Error>
+    return (
+      <Bounce>
+        <Error>{error}</Error>
+      </Bounce>
+    )
   }
 
   const nextQuestion = () => {
     if (!selectedAnswer) {
-      setError("Please select answer")
+      setError("Please select an answer")
     } else {
       questions[questionIndex].correct_answer === selectedAnswer
         ? setCorrectAnswers(correctAnswers + 1)
@@ -100,7 +106,16 @@ const QuizzPage = ({ pathname }) => {
                 selectedAnswer={selectedAnswer}
                 onChange={e => handleCheck(e)}
               />
-              <label htmlFor={answer.text}> {answer.text}</label>
+              <label
+                style={{
+                  fontFamily: `Quicksand, sans-serif `,
+                  lineHeight: "23px",
+                }}
+                htmlFor={answer.text}
+              >
+                {" "}
+                {answer.text}
+              </label>
             </Answer>
           ))}
           <div
@@ -127,23 +142,30 @@ const QuizzPage = ({ pathname }) => {
       <GlobalStyle />
       <Wrapper>
         <Sideleft>
-          <Logo onClick={() => navigate(`/`)}>
-            {page === "javascript" ? (
+          <Logo
+            onClick={() => {
+              navigate(`/${page}`)
+              retakeTest()
+            }}
+          >
+            {page === "JavaScript" ? (
               <img src={Js} alt="quizz logo" />
-            ) : page === "php" ? (
+            ) : page === "Php" ? (
               <img src={Php} alt="quizz logo" />
-            ) : page === "python" ? (
+            ) : page === "Python" ? (
               <img src={Python} alt="quizz logo" />
             ) : null}
           </Logo>
           {showResults ? (
-            <h4> Congratulations! You completed the test </h4>
+            <Content>
+              <h4> Congratulations! You completed the test </h4>
+            </Content>
           ) : (
             <>
               <Content>
-                {/* <h5>
+                <h5>
                   Question {questionIndex + 1} of {questions.length}
-                </h5> */}
+                </h5>
                 {questions.length != 0 ? (
                   <h4>{questions[questionIndex].question}</h4>
                 ) : null}
