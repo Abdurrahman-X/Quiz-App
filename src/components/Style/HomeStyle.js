@@ -18,7 +18,7 @@ export const Sideleft = styled.div`
     font-size: 3.5rem;
     text-transform: capitalize;
     margin: 0px;
-    font-family: muli, sans-serif;
+    font-family: Ubuntu, sans-serif;
   }
   @media (max-width: 810px) {
     grid-column-start: span 12;

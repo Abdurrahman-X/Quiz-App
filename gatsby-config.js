@@ -4,7 +4,19 @@ module.exports = {
     description: `This app contains 3 challenges to test your skills in : Javascript, Php and Python.`,
     author: `Ismail El mahi & Nadia Laasri`,
   },
-  plugins: [
+  plugins: [{
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [{
+            family: `Ubuntu`,
+          },
+          {
+            family: `Quicksand`
+          }
+
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
 import Js from "../data/images/javascript.png"
-import Php from "../data/images/php.png"
+import Php from "../data/images/php_logo.png"
 import Python from "../data/images/python.png"
 import { CardStyle } from "./Style/HomeStyle"
 const Cards = () => {
@@ -34,7 +34,14 @@ const Cards = () => {
           true={card.background}
           onClick={() => navigate(`/${card.title}`)}
         >
-          <h1> {card.title} </h1>
+          <h1
+            style={{
+              fontFamily: `  Ubuntu,sansSerif`,
+            }}
+          >
+            {" "}
+            {card.title}{" "}
+          </h1>
           <h5> This quiz contains 10 questions about {card.title} </h5>
           <img
             src={card.logo}

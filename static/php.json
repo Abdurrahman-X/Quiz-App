@@ -1,5 +1,5 @@
 [{
-        "question": "Q 1 - Which of the following is correct about PHP?",
+        "question": "Which of the following is correct about PHP?",
         "answers": [{
                 "text": " PHP is a recursive acronym for PHP: Hypertext Preprocessor.",
                 "value": "0"
@@ -83,7 +83,7 @@
         "correct_answer": "0"
     },
     {
-        "question": "Q 6 - Which of the following function opens a file?",
+        "question": "Which of the following function opens a file?",
         "answers": [{
                 "text": "fopen()",
                 "value": "0"
