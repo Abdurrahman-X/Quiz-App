@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { navigate } from "gatsby"
 import Js from "../data/images/javascript.png"
-import Php from "../data/images/php_logo.png"
+import Php from "../data/images/php.png"
 import Python from "../data/images/python.png"
 import { CardStyle } from "./Style/HomeStyle"
 const Cards = () => {

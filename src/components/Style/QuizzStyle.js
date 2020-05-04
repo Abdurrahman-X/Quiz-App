@@ -7,9 +7,8 @@ export const Wrapper = styled.div `
 `
 export const Logo = styled.div `
   display: inline-block;
-  cursor: pointer;
   img {
-    width: 110px;
+    width: 130px;
     max-height : 60px;
   }
   h5 {
