@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { navigate } from "gatsby"
+import { navigate, Link } from "gatsby"
 import Results from "../components/results"
 import AnswerInput from "../components/AnswerInput"
 import GlobalStyle from "../components/Style/GlobalStyle"
@@ -112,9 +112,9 @@ const QuizzPage = ({ pathname }) => {
             }}
           >
             <button onClick={nextQuestion}>Next</button>
-            <a href="/" style={{ color: "#637a80" }}>
+            <Link to="/" style={{ color: "#637a80" }}>
               Quit the quizz
-            </a>
+            </Link>
           </div>
         </div>
       )
@@ -141,9 +141,9 @@ const QuizzPage = ({ pathname }) => {
           ) : (
             <>
               <Content>
-                {/* <h5>
+                <h5>
                   Question {questionIndex + 1} of {questions.length}
-                </h5> */}
+                </h5>
                 {questions.length != 0 ? (
                   <h4>{questions[questionIndex].question}</h4>
                 ) : null}

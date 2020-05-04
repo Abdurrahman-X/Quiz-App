@@ -1,13 +1,11 @@
-import styled, {
-  css
-} from "styled-components"
+import styled, { css } from "styled-components"
 
-export const Wrapper = styled.div `
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 100vh;
 `
-export const Sideleft = styled.div `
+export const Sideleft = styled.div`
   position: relative;
   grid-column-start: span 6;
   background-color: #000;
@@ -32,7 +30,7 @@ export const Sideleft = styled.div `
   }
 `
 
-export const Choose = styled.div `
+export const Choose = styled.div`
   padding: 40px;
   text-align: center;
   h3 {
@@ -44,7 +42,7 @@ export const Choose = styled.div `
     border-radius: 4px;
   }
 `
-export const Sideright = styled.div `
+export const Sideright = styled.div`
   grid-column-start: span 6;
   color: #000;
   background: #fbfbfb;
@@ -58,7 +56,7 @@ export const Sideright = styled.div `
     padding: 10px;
   }
 `
-export const CardStyle = styled.div `
+export const CardStyle = styled.div`
   background: #fff;
   padding: 10px 30px;
   margin: 5px 0;
@@ -78,4 +76,22 @@ export const CardStyle = styled.div `
     margin: 10px;
     font-size: 14px;
   }
+`
+ 
+export const ErrorWrapper = styled.div`
+  background: #000;
+        color: #fff;
+        width: 100vw;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+`
+ 
+export const ErrorPage = styled.div`
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
 `

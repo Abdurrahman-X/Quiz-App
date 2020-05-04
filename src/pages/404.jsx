@@ -1,33 +1,20 @@
 import React from "react"
 import GlobalStyle from "../components/Style/GlobalStyle"
-
+import {Link } from "gatsby"
+import {
+  ErrorWrapper,
+  ErrorPage
+} from "../components/Style/HomeStyle"
 const NotFoundPage = () => (
   <>
     <GlobalStyle />
-    <div
-      style={{
-        background: "#000",
-        color: "#fff",
-        width: " 100vw",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <ErrorWrapper>
       Sorry! Page Not Found
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <ErrorPage>
         <p>Click here to see the home page</p>
-        <a href="/">Home</a>
-      </div>
-    </div>
+        <Link to="/" style={{textAlign:"center"}}>Home</Link>
+      </ErrorPage>
+    </ErrorWrapper>
   </>
 )
 
